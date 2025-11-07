@@ -27,6 +27,8 @@ num_views <- 14
 # Examine the if statement for medium
 if (medium == "LinkedIn") {
   print("Showing LinkedIn information")
+} else{
+  print("Unknown medium")
 }
 
 # Write the if statement for num_views
