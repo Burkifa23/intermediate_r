@@ -34,5 +34,7 @@ if (medium == "LinkedIn") {
 # Write the if statement for num_views
 if (num_views >15){
   print("You are popular!")
+} else {
+  print("Try to be more visible!")
 }
 
