@@ -1,10 +1,16 @@
 # Initialize the speed variable
 speed <- 64
 
-# Code the while loop
-while (speed>30) {
-  print("Slow down!")
-  speed <- speed -7
+# Extend/adapt the while loop
+while (speed > 30) {
+  print(paste("Your speed is", speed))
+  if (speed > 48) {
+    print("Slow down big time!")
+    speed <- speed - 11
+  } else {
+    print("Slow down!")
+    speed <- speed - 6
+  }
 }
 
 # Print out the speed variable
