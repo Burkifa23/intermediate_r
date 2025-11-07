@@ -1,9 +1,14 @@
 # Initialize the speed variable
-speed <- 64
+speed <- 88
 
-# Extend/adapt the while loop
 while (speed > 30) {
   print(paste("Your speed is", speed))
+  
+  # Break the while loop when speed exceeds 80
+  if (speed > 80) {
+    break
+  }
+  
   if (speed > 48) {
     print("Slow down big time!")
     speed <- speed - 11
@@ -13,5 +18,4 @@ while (speed > 30) {
   }
 }
 
-# Print out the speed variable
 speed
