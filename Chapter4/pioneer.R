@@ -1,11 +1,22 @@
-# The vector pioneers has already been created for you
+# Code from previous exercise:
 pioneers <- c("GAUSS:1777", "BAYES:1702", "PASCAL:1623", "PEARSON:1857")
+split <- strsplit(pioneers, split = ":")
+split_low <- lapply(split, tolower)
 
-# Split names from birth year
-split_math <- strsplit(pioneers, split = ":")
+# Write function select_first()
+select_first <- function(x) {
+  x[1]
+}
 
-# Convert to lowercase strings: split_low
-split_low <- lapply(split_math,tolower)
+# Apply select_first() over split_low: names
+names <- lapply(split_low, select_first)
 
-# Take a look at the structure of split_low
-str(split_low)
+# Write function select_second()
+select_second <- function(x) {
+  x[2]
+
+}
+
+# Apply select_second() over split_low: years
+
+years <- lapply(split_low, select_second)
